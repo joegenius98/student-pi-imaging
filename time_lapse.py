@@ -22,7 +22,7 @@ PHOTOS = SESSION_LENGTH / INTERVAL
 with PiCamera() as camera:
     camera.start_preview()
     try:
-        for i, filename in enumerate(camera.capture_continuous('image{counter:02d}.jpg')):
+        for i, filename in enumerate(camera.capture_continuous('image{counter}.jpg')):
             print(filename)
             time.sleep(INTERVAL)
             if i == PHOTOS - 1:
