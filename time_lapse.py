@@ -32,4 +32,4 @@ with PiCamera() as camera:
 
 
 camera.stop_preview()
-
+#hi
